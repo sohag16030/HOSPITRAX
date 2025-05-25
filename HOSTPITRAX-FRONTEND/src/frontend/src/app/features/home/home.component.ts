@@ -3,7 +3,7 @@ import {MatToolbar} from "@angular/material/toolbar";
 import {MatButton} from "@angular/material/button";
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-reagan',
   standalone: true,
   imports: [
     MatToolbar,
