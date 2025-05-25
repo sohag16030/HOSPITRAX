@@ -1,5 +1,5 @@
 export const PATH_VARIABLE = {
-  BASE: 'hospitrax/web',
+  BASE: 'hospitrax',
 };
 
 export const ROUTE_LINK = {
