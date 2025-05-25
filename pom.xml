@@ -20,6 +20,7 @@
 
     <modules>
         <module>HOSPITRAX-BACKEND</module>
+        <module>HOSPITRAX-FRONTNED</module>
     </modules>
 
     <properties>
