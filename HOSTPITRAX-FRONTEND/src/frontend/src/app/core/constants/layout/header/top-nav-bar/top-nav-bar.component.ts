@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
+import {MatMenu} from "@angular/material/menu";
+import {MatIcon} from "@angular/material/icon";
+import {MatToolbar} from "@angular/material/toolbar";
 
 @Component({
-  selector: 'app-top-nav-bar',
+  selector: 'top-nav-bar',
   standalone: true,
-  imports: [],
+  imports: [
+    MatMenu,
+    MatIcon,
+    MatToolbar
+  ],
   templateUrl: './top-nav-bar.component.html',
   styleUrl: './top-nav-bar.component.css'
 })
