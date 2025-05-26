@@ -1,16 +1,23 @@
 <nav class="bg-white shadow-md sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="max-w-[83rem] mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16 items-center">
       <div class="flex items-center">
-        <span class="text-xl font-bold text-blue-600">Lorem Health</span>
+        <a href="#" class="text-[2rem] font-normal text-black">
+          <span class="bg-blue-700 text-white px-2 py-1 rounded italic">LOREM</span> Health
+        </a>
       </div>
 
-      <div class="hidden md:flex space-x-6">
-        <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
-        <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
-        <a href="#" class="text-gray-700 hover:text-blue-600">Services</a>
-        <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+      <div class="flex items-center space-x-6">
+        <a href="#" class="text-[1rem] font-normal text-black">Find Care</a>
+        <a href="#" class="text-[1rem] font-normal text-black">Patient Resources</a>
+        <a href="#" class="text-[1rem] font-normal text-black">Treatment options</a>
+        <a href="#" class="text-[1rem] font-normal text-black">Locations</a>
+        <a href="#" class="text-[1rem] font-normal text-black">Discover</a>
       </div>
+
+      <button mat-button [ngStyle]="{ 'background': 'orange'}">
+        <a href="#" class="text-[1rem] font-bold text-black m-2">Find a Doctor</a>
+      </button>
 
       <div class="md:hidden">
         <button>
