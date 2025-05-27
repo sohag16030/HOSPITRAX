@@ -3,5 +3,5 @@ export const PATH_VARIABLE = {
 };
 
 export const ROUTE_LINK = {
-  HOME: { link: `${PATH_VARIABLE.BASE}/home` },
+  HOME: { link: `${PATH_VARIABLE.BASE}/lorem` },
 };

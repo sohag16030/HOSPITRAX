@@ -4,16 +4,16 @@ import {MatButton} from "@angular/material/button";
 import {HeroBannerComponent} from "./hero-banner/hero-banner.component";
 
 @Component({
-  selector: 'app-reagan',
+  selector: 'lorem',
   standalone: true,
     imports: [
         MatToolbar,
         MatButton,
         HeroBannerComponent
     ],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  templateUrl: './lorem.component.html',
+  styleUrl: './lorem.component.css'
 })
-export class HomeComponent {
+export class LoremComponent {
 
 }
