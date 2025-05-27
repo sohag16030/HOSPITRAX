@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
+import {MatCard, MatCardContent} from "@angular/material/card";
 
 @Component({
-  selector: 'app-breadcrumb-navigation',
+  selector: 'breadcrumb-navigation',
   standalone: true,
-  imports: [],
+  imports: [
+    MatCardContent,
+    MatCard
+  ],
   templateUrl: './breadcrumb-navigation.component.html',
-  styleUrl: './breadcrumb-navigation.component.css'
+  styleUrl: './breadcrumb-navigation.component.css',
 })
 export class BreadcrumbNavigationComponent {
 
