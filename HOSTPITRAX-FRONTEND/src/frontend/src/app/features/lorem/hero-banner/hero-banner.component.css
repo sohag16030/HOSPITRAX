@@ -5,3 +5,11 @@
 .bg-primary-darkest {
   background-color: #003b5c;
 }
+
+.yellow-icon {
+  color: #e6cd4c !important;
+}
+
+.disabled-icon{
+  color: #9a9a97 !important;
+}
