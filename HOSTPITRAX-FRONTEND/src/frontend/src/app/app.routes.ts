@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import {LoremComponent} from "./features/./lorem/lorem.component";
 import {ROUTE_LINK} from "./core/constants/route.link";
+import {LoremComponent} from "./features/lorem/lorem.component";
 
 export const routes: Routes = [
   {

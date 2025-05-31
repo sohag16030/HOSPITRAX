@@ -1,9 +1,17 @@
 import { Component } from '@angular/core';
+import {MatCard, MatCardContent} from "@angular/material/card";
+import {MatButton} from "@angular/material/button";
+import {NgStyle} from "@angular/common";
 
 @Component({
-  selector: 'app-map-and-directions',
+  selector: 'map-and-directions',
   standalone: true,
-  imports: [],
+  imports: [
+    MatCard,
+    MatCardContent,
+    MatButton,
+    NgStyle
+  ],
   templateUrl: './map-and-directions.component.html',
   styleUrl: './map-and-directions.component.css'
 })
