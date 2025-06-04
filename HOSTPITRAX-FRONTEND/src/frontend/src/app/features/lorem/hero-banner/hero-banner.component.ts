@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 import {BreadcrumbNavigationComponent} from "../breadcrumb-navigation/breadcrumb-navigation.component";
 
