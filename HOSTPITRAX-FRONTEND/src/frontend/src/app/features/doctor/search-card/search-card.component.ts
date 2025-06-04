@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
+import {MatIcon} from "@angular/material/icon";
+import {NgStyle} from "@angular/common";
+import {MatCard} from "@angular/material/card";
 
 @Component({
-  selector: 'app-search-card',
+  selector: 'search-card',
   standalone: true,
-  imports: [],
+  imports: [
+    MatIcon,
+    NgStyle,
+    MatCard
+  ],
   templateUrl: './search-card.component.html',
   styleUrl: './search-card.component.css'
 })
