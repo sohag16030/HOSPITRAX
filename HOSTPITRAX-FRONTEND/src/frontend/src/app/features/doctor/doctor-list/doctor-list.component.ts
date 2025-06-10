@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import {DoctorDetailsCardComponent} from "../doctor-details-card/doctor-details-card.component";
 
 @Component({
-  selector: 'app-doctor-list',
+  selector: 'doctor-list',
   standalone: true,
-  imports: [],
+    imports: [
+        DoctorDetailsCardComponent
+    ],
   templateUrl: './doctor-list.component.html',
   styleUrl: './doctor-list.component.css'
 })

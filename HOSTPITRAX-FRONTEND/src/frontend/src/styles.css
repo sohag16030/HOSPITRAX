@@ -26,3 +26,11 @@ body {
     font-family: 'Times New Roman', serif !important;
     color: white;
 }
+
+.card-header-font {
+    font-family: 'Times New Roman', serif !important;
+}
+
+.background {
+    background: rgba(237, 224, 224, 0.96) !important;
+}

@@ -1,1 +1,29 @@
-<p>doctor-details-card works!</p>
+<div class="my-4">
+    <mat-card class="max-w-[80rem] overflow-hidden mx-auto">
+        <mat-card-content>
+            <div class="flex flex-row py-3">
+                <div class="mr-5">
+                    <img [ngStyle]="{'border-radius': '6px'}" src="assets/images/doctors/1.png" alt="x">
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col">
+                        <p class="card-header-font text-[2.2rem] py-3 text-[#003b5c]">Sona Hurtz, MD</p>
+                        <h2>Internal Medicine</h2>
+                        <div class="font-medium mt-[0.1px]">Geriatric Medicine</div>
+                        <div class="font-medium">200 Medical Plaza, Suite 365, Los Angeles, CA 90095</div>
+                        <div class="flex flex-row justify-between text-center">
+                            <a href="tel:3108252661"
+                               class="flex items-center text-[1rem] font-bold space-x-1 text-[#003b5c]">
+                                <mat-icon>phone</mat-icon>
+                                <span>310-825-2661</span>
+                            </a>
+                            <a [ngStyle]="{'background-color':'#2774ae', 'border-radius':'6px','padding':'0.8rem','margin-top':'1rem'}"
+                               href="#" class="text-[1rem] font-normal text-white">Book an Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
+

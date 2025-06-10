@@ -9,6 +9,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatInputModule } from '@angular/material/input';
 import {MatIcon} from "@angular/material/icon";
+import {MatCard, MatCardContent} from "@angular/material/card";
 
 interface Country {
     name: string;
@@ -29,7 +30,9 @@ interface Country {
         AsyncPipe,
         NgForOf,
         NgStyle,
-        MatIcon
+        MatIcon,
+        MatCard,
+        MatCardContent
     ],
     templateUrl: './filter-card.component.html',
     styleUrl: './filter-card.component.css'
