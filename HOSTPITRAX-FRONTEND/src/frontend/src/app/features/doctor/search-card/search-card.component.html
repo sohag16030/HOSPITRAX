@@ -1,27 +1,54 @@
 <div class="search-card">
-  <div class="max-w-[82rem] mx-auto">
-    <div class="flex items-center space-x-2 pt-6">
-      <mat-icon class="yellow-icon">home</mat-icon>
-      <mat-icon class="disabled-icon">arrow_right</mat-icon>
+    <div class="max-w-[82rem] mx-auto">
+        <div class="flex items-center space-x-2 pt-6">
+            <mat-icon class="yellow-icon">home</mat-icon>
+            <mat-icon class="disabled-icon">arrow_right</mat-icon>
+        </div>
+        <div class="flex items-center justify-between mt-[4rem]">
+            <p class="text-[3rem] card-header">Find a Doctor Near You</p>
+            <div class="relative">
+                <input class="search-input" placeholder="Search by name or speciality">
+                <mat-icon class="search-icon absolute right-5 top-1/2 transform -translate-y-1/2">search</mat-icon>
+            </div>
+        </div>
     </div>
-    <div class="flex items-center justify-between mt-[4rem]">
-      <p class="text-[3rem] card-header">Find a Doctor Near You</p>
-      <div class="relative">
-        <input class="search-input" placeholder="Search by name or speciality">
-        <mat-icon class="search-icon absolute right-5 top-1/2 transform -translate-y-1/2">search</mat-icon>
-      </div>
-    </div>
-  </div>
 </div>
 <div class="search-details-card">
-  <div class="max-w-[82rem] mx-auto flex">
-    <img [ngStyle]="{'width':'22rem','border-radius':'8px'}" src="assets/images/find-a-doctor.png" alt="">
-    <div class="flex flex-col w-full gap-4">
-      <div style="background: red; height: 13rem; width: 100%"></div>
-      <div class="flex gap-4 w-full">
-        <div style="background: blue; height: 15rem; width: 50%"></div>
-        <div style="background: green; height: 15rem; width: 50%"></div>
-      </div>
+    <div class="max-w-[82rem] mx-auto flex">
+        <div class="mt-5 min-w-[24rem]">
+            <filter-card></filter-card>
+        </div>
+        <div class="flex flex-col w-full gap-4 ml-8 mt-5">
+            <div class="flex gap-4 w-full">
+                <div style="background: #ffffff; width: 50%">
+                    <mat-card class="w-full overflow-hidden mx-auto">
+                        <mat-card-content class="mt-5">
+                            <h1 class="card-header text-center p-3" [ngStyle]="{'color':'black','font-size':'2rem'}">
+                                Book an Appointment</h1>
+                            <p class="card-header text-center  p-6" [ngStyle]="{'color':'black','font-size':'1.2rem'}">
+                                See a doctor, virtually or in-person, with our easy online booking options.</p>
+                            <div class="mx-[8rem] text-center"
+                                 [ngStyle]="{'background-color':'#2774ae', 'border-radius':'6px','padding':'0.8rem','margin-top':'1rem'}">
+                                <a href="#" class="text-[1rem] font-normal text-white">Schedule now</a>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div style="background: #ffffff; width: 50%">
+                    <mat-card class="w-full overflow-hidden mx-auto">
+                        <mat-card-content class="mt-5">
+                            <h1 class="card-header text-center p-3" [ngStyle]="{'color':'black','font-size':'2rem'}">
+                                Find a Primary Care Doctor</h1>
+                            <p class="card-header text-center  p-6" [ngStyle]="{'color':'black','font-size':'1.2rem'}">
+                                Looking for a primary physician for yourself or your family? Start here.</p>
+                            <div class="mx-[7.5rem] text-center p-2"
+                                 [ngStyle]="{'background-color':'#2774ae', 'border-radius':'6px','padding':'0.8rem','margin-top':'1rem'}">
+                                <a href="#" class="text-[1rem] font-normal text-white">See our doctors</a>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
