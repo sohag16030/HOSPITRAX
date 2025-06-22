@@ -15,66 +15,45 @@
 </div>
 <div class="search-details-card">
     <div class="max-w-[72rem] mx-auto flex">
-        <div class="mt-5 min-w-[24rem]">
+        <div class="mt-5 min-w-[20rem]">
             <filter-card></filter-card>
         </div>
-        <div class="flex flex-col w-full gap-4 ml-8 mt-5">
-            <div class="flex gap-4 w-full">
-                <div style="background: #ffffff; width: 50%">
-                    <mat-card class="w-full overflow-hidden mx-auto">
-                        <mat-card-content class="mt-5">
-                            <h1 class="card-header text-center p-3" [ngStyle]="{'color':'black','font-size':'2rem'}">
-                                Book an Appointment</h1>
-                            <p class="card-header text-center  p-6" [ngStyle]="{'color':'black','font-size':'1.2rem'}">
-                                See a doctor, virtually or in-person, with our easy online booking options.</p>
-                            <div class="mx-[8rem] text-center"
-                                 [ngStyle]="{'background-color':'#2774ae', 'border-radius':'6px','padding':'0.8rem','margin-top':'1rem'}">
-                                <a href="#" class="text-[1rem] font-normal text-white">Schedule now</a>
-                            </div>
-                        </mat-card-content>
-                    </mat-card>
-                </div>
-                <div style="background: #ffffff; width: 50%">
-                    <mat-card class="w-full overflow-hidden mx-auto">
-                        <mat-card-content class="mt-5">
-                            <h1 class="card-header text-center p-3" [ngStyle]="{'color':'black','font-size':'2rem'}">
-                                Find a Primary Care Doctor</h1>
-                            <p class="card-header text-center  p-6" [ngStyle]="{'color':'black','font-size':'1.2rem'}">
-                                Looking for a primary physician for yourself or your family? Start here.</p>
-                            <div class="mx-[7.5rem] text-center p-2"
-                                 [ngStyle]="{'background-color':'#2774ae', 'border-radius':'6px','padding':'0.8rem','margin-top':'1rem'}">
-                                <a href="#" class="text-[1rem] font-normal text-white">See our doctors</a>
-                            </div>
-                        </mat-card-content>
-                    </mat-card>
-                </div>
+        <div class="flex flex-col w-full gap-4 ml-4 mt-5">
+          <div class="flex gap-4 w-full">
+            <div style="background: #ffffff;">
+              <mat-card class="w-full overflow-hidden mx-auto">
+                <mat-card-content class="mt-5">
+                  <h1 class="card-header text-center p-3" [ngStyle]="{'color':'black','font-size':'2rem'}">
+                    Book an Appointment</h1>
+                  <p class="card-header text-center p-6" [ngStyle]="{'color':'black','font-size':'1.2rem'}">
+                    See a doctor, virtually or in-person, with our easy online booking options.</p>
+                  <div class="mx-[4rem] text-center"
+                       [ngStyle]="{'background-color':'#2774ae', 'border-radius':'6px','padding':'0.8rem','margin-top':'3rem'}">
+                    <a href="#" class="text-[1rem] font-normal text-white">Schedule now</a>
+                  </div>
+                </mat-card-content>
+              </mat-card>
             </div>
+            <div style="background: #ffffff;">
+              <mat-card class="w-full overflow-hidden mx-auto">
+                <mat-card-content class="mt-5">
+                  <h1 class="card-header text-center p-3" [ngStyle]="{'color':'black','font-size':'2rem'}">
+                    Find a Primary Care Doctor</h1>
+                  <p class="card-header text-center  p-6" [ngStyle]="{'color':'black','font-size':'1.2rem'}">
+                    Looking for a primary physician for yourself or your family? Start here.</p>
+                  <div class="mx-[4rem] text-center p-2"
+                       [ngStyle]="{'background-color':'#2774ae', 'border-radius':'6px','padding':'0.8rem','margin-top':'1rem'}">
+                    <a href="#" class="text-[1rem] font-normal text-white">See our doctors</a>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </div>
+          </div>
+          <div class="py-2 rounded w-full">
+           <doctor-list></doctor-list>
+          </div>
         </div>
+      <div>
+      </div>
     </div>
-    <mat-card class="w-fit mt-5 mx-auto max-w-full overflow-hidden card-shadow">
-        <mat-card-content class="!py-2">
-            <div class="flex items-center gap-1">
-                <a href="#"
-                   class="text-[1rem] font-bold  px-4 py-[1rem] inline-block rounded-md transition-colors duration-200 hover:bg-blue-50"
-                   style="color: #2774ae;">
-                    See All
-                </a>
-                <a href="#"
-                   class="text-[1rem] font-bold  px-4 py-[1rem] inline-block rounded-md transition-colors duration-200 hover:bg-blue-50"
-                   style="color: #2774ae;">
-                    Male Doctors
-                </a>
-                <a href="#"
-                   class="text-[1rem] font-bold  px-4 py-[1rem] inline-block rounded-md transition-colors duration-200 hover:bg-blue-50"
-                   style="color: #2774ae;">
-                    Female Doctors
-                </a>
-                <a href="#"
-                   class="text-[1rem] font-bold  px-4 py-[1rem] inline-block rounded-md transition-colors duration-200 hover:bg-blue-50"
-                   style="color: #2774ae;">
-                    Primary care doctors
-                </a>
-            </div>
-        </mat-card-content>
-    </mat-card>
 </div>

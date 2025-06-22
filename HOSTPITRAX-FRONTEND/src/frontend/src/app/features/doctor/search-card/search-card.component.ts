@@ -4,18 +4,20 @@ import {NgStyle} from "@angular/common";
 import {MatCard, MatCardContent} from "@angular/material/card";
 import {FilterCardComponent} from "../filter-card/filter-card.component";
 import {DoctorDetailsCardComponent} from "../doctor-details-card/doctor-details-card.component";
+import {DoctorListComponent} from "../doctor-list/doctor-list.component";
 
 @Component({
   selector: 'search-card',
   standalone: true,
-    imports: [
-        MatIcon,
-        NgStyle,
-        MatCard,
-        MatCardContent,
-        FilterCardComponent,
-        DoctorDetailsCardComponent
-    ],
+  imports: [
+    MatIcon,
+    NgStyle,
+    MatCard,
+    MatCardContent,
+    FilterCardComponent,
+    DoctorDetailsCardComponent,
+    DoctorListComponent
+  ],
   templateUrl: './search-card.component.html',
   styleUrl: './search-card.component.css'
 })

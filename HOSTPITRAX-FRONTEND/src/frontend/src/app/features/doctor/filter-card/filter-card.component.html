@@ -1,44 +1,101 @@
 <div style="background: #ffffff;">
-    <mat-card class="w-full overflow-hidden mx-auto">
-            <mat-card-content>
-                <h2>Speciality</h2>
-                <mat-form-field class="w-[22rem]">
-                    <input
-                           matInput
-                           placeholder="Select or beign typing"
-                           aria-label="Country"
-                           [matAutocomplete]="auto"
-                           [formControl]="countryCtrl"
-                           required
-                    />
-                    <mat-autocomplete #auto="matAutocomplete">
-                        <mat-option
-                                *ngFor="let country of filteredCountry | async"
-                                [value]="country.name"
-                        >
-                            <span>{{ country.name }} | {{ country.code }}</span>
-                        </mat-option>
-                    </mat-autocomplete>
-                </mat-form-field>
-                <h2>Speciality</h2>
-                <mat-form-field class="w-[22rem]">
-                    <input
-                            matInput
-                            placeholder="Select or beign typing"
-                            aria-label="Country"
-                            [matAutocomplete]="auto"
-                            [formControl]="countryCtrl"
-                            required
-                    />
-                    <mat-autocomplete #auto="matAutocomplete">
-                        <mat-option
-                                *ngFor="let country of filteredCountry | async"
-                                [value]="country.name"
-                        >
-                            <span>{{ country.name }} | {{ country.code }}</span>
-                        </mat-option>
-                    </mat-autocomplete>
-                </mat-form-field>
-            </mat-card-content>
-        </mat-card>
+  <mat-card class="w-full overflow-hidden mx-auto">
+    <mat-card-content>
+      <h2>Speciality</h2>
+      <mat-form-field class="w-[18rem]">
+        <input
+          matInput
+          placeholder="Select or beign typing"
+          aria-label="Country"
+          [matAutocomplete]="auto"
+          [formControl]="countryCtrl"
+          required
+        />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option
+            *ngFor="let country of filteredCountry | async"
+            [value]="country.name"
+          >
+            <span>{{ country.name }} | {{ country.code }}</span>
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <h2>Speciality</h2>
+      <mat-form-field class="w-[18rem]">
+        <input
+          matInput
+          placeholder="Select or beign typing"
+          aria-label="Country"
+          [matAutocomplete]="auto"
+          [formControl]="countryCtrl"
+          required
+        />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option
+            *ngFor="let country of filteredCountry | async"
+            [value]="country.name"
+          >
+            <span>{{ country.name }} | {{ country.code }}</span>
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <h2>Speciality</h2>
+      <mat-form-field class="w-[18rem]">
+        <input
+          matInput
+          placeholder="Select or beign typing"
+          aria-label="Country"
+          [matAutocomplete]="auto"
+          [formControl]="countryCtrl"
+          required
+        />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option
+            *ngFor="let country of filteredCountry | async"
+            [value]="country.name"
+          >
+            <span>{{ country.name }} | {{ country.code }}</span>
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <h2>Speciality</h2>
+      <mat-form-field class="w-[18rem]">
+        <input
+          matInput
+          placeholder="Select or beign typing"
+          aria-label="Country"
+          [matAutocomplete]="auto"
+          [formControl]="countryCtrl"
+          required
+        />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option
+            *ngFor="let country of filteredCountry | async"
+            [value]="country.name"
+          >
+            <span>{{ country.name }} | {{ country.code }}</span>
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <h2>Speciality</h2>
+      <mat-form-field class="w-[18rem]">
+        <input
+          matInput
+          placeholder="Select or beign typing"
+          aria-label="Country"
+          [matAutocomplete]="auto"
+          [formControl]="countryCtrl"
+          required
+        />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option
+            *ngFor="let country of filteredCountry | async"
+            [value]="country.name"
+          >
+            <span>{{ country.name }} | {{ country.code }}</span>
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </mat-card-content>
+  </mat-card>
 </div>
