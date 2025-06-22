@@ -13,6 +13,15 @@
         </div>
     </div>
 </div>
+
+<div class="doctor-tabs">
+  <button mat-stroked-button [ngClass]="{ 'active-tab': selectedTab === 'all' }" (click)="selectedTab = 'all'">See All</button>
+  <button mat-stroked-button [ngClass]="{ 'active-tab': selectedTab === 'male' }" (click)="selectedTab = 'male'">Male Doctors</button>
+  <button mat-stroked-button [ngClass]="{ 'active-tab': selectedTab === 'female' }" (click)="selectedTab = 'female'">Female Doctors</button>
+  <button mat-stroked-button [ngClass]="{ 'active-tab': selectedTab === 'primary' }" (click)="selectedTab = 'primary'">Primary Care Doctors</button>
+  <button mat-stroked-button [ngClass]="{ 'active-tab': selectedTab === 'pediatric' }" (click)="selectedTab = 'pediatric'">Pediatricians</button>
+</div>
+
 <div class="search-details-card">
     <div class="max-w-[72rem] mx-auto flex">
         <div class="mt-5 min-w-[20rem]">
