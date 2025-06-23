@@ -38,34 +38,23 @@ interface Country {
     styleUrl: './filter-card.component.css'
 })
 export class FilterCardComponent implements OnInit {
+  searchControl = new FormControl('');
+  options: string[] = ['Dr. Zaman', 'Dr. Rahman', 'Dr. Anika', 'Dr. Karim','Dr. Zaman', 'Dr. Rahman', 'Dr. Anika', 'Dr. Karim'];
+  filteredOptions: string[] = [];
 
-    searchText: string = '';
-    dropdownOpen: boolean = false;
+  ngOnInit() {
+    this.searchControl.valueChanges
+      .pipe(
+        startWith(''),
+        map(value => this._filter(value || ''))
+      )
+      .subscribe(filtered => (this.filteredOptions = filtered));
+  }
 
-    countryCtrl = new FormControl<string | null>(null);
-    filteredCountry!: Observable<Country[]>;
-
-
-    countries: Country[] = [
-        { name: 'Bangladesh', code: 'BD' },
-        { name: 'India', code: 'IN' },
-        { name: 'United States', code: 'US' },
-        { name: 'United Kingdom', code: 'UK' },
-        { name: 'Canada', code: 'CA' }
-    ];
-
-    ngOnInit() {
-        this.filteredCountry = this.countryCtrl.valueChanges.pipe(
-            startWith(''),
-            map(value => this._filterCountries(value || ''))
-        );
-    }
-
-    private _filterCountries(value: string): Country[] {
-        const filterValue = value.toLowerCase();
-        return this.countries.filter(country =>
-            country.name.toLowerCase().includes(filterValue) ||
-            country.code.toLowerCase().includes(filterValue)
-        );
-    }
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+    return this.options.filter(option =>
+      option.toLowerCase().includes(filterValue)
+    );
+  }
 }
