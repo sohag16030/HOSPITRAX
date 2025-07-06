@@ -1,0 +1,17 @@
+.letter {
+  color: black;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  background-color: #f6e1e1;
+  width: 2.3rem;
+  height: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', serif;
+}
+.letter:hover {
+  background-color: #c7bebe;
+  border-color: #999;
+}
