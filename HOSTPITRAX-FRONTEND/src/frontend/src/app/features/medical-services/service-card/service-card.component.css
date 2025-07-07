@@ -1,0 +1,17 @@
+.vertical-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.4%;
+  height: 100%;
+  background: linear-gradient(to bottom, #9fc7e8, #0a4296);
+  z-index: 1;
+}
+
+.service-card {
+  cursor: pointer;
+}
+
+.service-card :hover {
+  background: #e0e8f8;
+}
