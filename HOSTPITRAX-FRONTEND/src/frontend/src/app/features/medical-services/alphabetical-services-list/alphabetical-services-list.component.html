@@ -1,0 +1,8 @@
+<div *ngFor="let letter of letters; let i = index">
+  <div [ngClass]="i % 2 === 0 ? 'odd-card' : 'even-card'">
+    <alphabetically-services-card
+      [letter]="letter"
+      [services]="getServicesByLetter(letter)">
+    </alphabetically-services-card>
+  </div>
+</div>

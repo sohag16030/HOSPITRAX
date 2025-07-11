@@ -1,16 +1,13 @@
 <section class="card-container">
   <div class="custom-card max-w-[77rem] mx-auto">
-    <div class="letter">A</div>
-    <div class="button-wrapper">
-      <button mat-stroked-button class="custom-btn">Adolescent Epilepsy Care</button>
-      <button mat-stroked-button class="custom-btn">Adult Asthma Care</button>
-      <button mat-stroked-button class="custom-btn">Advanced Heart Failure</button>
-      <button mat-stroked-button class="custom-btn">Allergy and Immunology</button>
-      <button mat-stroked-button class="custom-btn">Alzheimer's Care</button>
-      <button mat-stroked-button class="custom-btn">Aortic Care</button>
-      <button mat-stroked-button class="custom-btn">Audiology</button>
-      <button mat-stroked-button class="custom-btn">Adult Epilepsy</button>
-      <button mat-stroked-button class="custom-btn">Adult Congenital Heart Disease</button>
+    <div class="letter text-2xl font-bold mb-4">{{ letter }}</div>
+    <div class="button-wrapper flex flex-wrap gap-2">
+      <button *ngFor="let service of services"
+              mat-stroked-button
+              class="custom-btn"
+              [routerLink]="service.route">
+        {{ service.name }}
+      </button>
     </div>
   </div>
 </section>

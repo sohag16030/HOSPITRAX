@@ -7,6 +7,7 @@ import {ServiceListCardComponent} from "./service-list-card/service-list-card.co
 import {
   AlphabeticallyServicesCardComponent
 } from "./alphabetically-services-card/alphabetically-services-card.component";
+import {AlphabeticalServicesListComponent} from "./alphabetical-services-list/alphabetical-services-list.component";
 
 @Component({
   selector: 'app-medical-services',
@@ -17,7 +18,8 @@ import {
     NgStyle,
     ServiceCardComponent,
     ServiceListCardComponent,
-    AlphabeticallyServicesCardComponent
+    AlphabeticallyServicesCardComponent,
+    AlphabeticalServicesListComponent
   ],
   templateUrl: './medical-services.component.html',
   styleUrl: './medical-services.component.css'
