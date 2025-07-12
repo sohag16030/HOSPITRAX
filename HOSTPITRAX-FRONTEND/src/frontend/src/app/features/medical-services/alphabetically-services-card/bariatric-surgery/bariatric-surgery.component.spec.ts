@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { BariatricSurgeryComponent } from './bariatric-surgery.component';
+
+describe('BariatricSurgeryComponent', () => {
+  let component: BariatricSurgeryComponent;
+  let fixture: ComponentFixture<BariatricSurgeryComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [BariatricSurgeryComponent]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(BariatricSurgeryComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

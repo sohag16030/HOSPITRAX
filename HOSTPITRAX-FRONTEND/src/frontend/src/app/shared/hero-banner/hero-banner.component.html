@@ -1,8 +1,8 @@
 <div
-  class="relative w-full h-[65vh] bg-primary-darkest flex items-center justify-center overflow-hidden bg-primary-darkest">
-  <div class="relative z-10  h-full">
+  class="relative w-full h-[65vh] bg-primary-darkest flex items-center justify-center overflow-hidden">
+  <div class="relative z-10 h-full">
     <img
-      src="assets/images/hero-banner.jpg"
+      [src]="imgSrc"
       alt="Hero Banner"
       class="w-full h-full object-cover"
     />
@@ -11,17 +11,17 @@
 
     <div class="absolute inset-0 text-white px-[1rem] ml-[6rem] mt-[2rem] pointer-events-none">
       <div class="flex items-center space-x-2 mb-[5rem]">
-        <mat-icon class="yellow-icon">home</mat-icon>
+        <mat-icon class="yellow-icon">{{ homeIconText }}</mat-icon> <!-- BIND TO INPUT -->
         <mat-icon class="disabled-icon">arrow_right</mat-icon>
-        <a href="#" class="text-[1rem] font-normal text-yellow-400">Hospitals</a>
+        <a [href]="hospitalLinkUrl" class="text-[1rem] font-normal text-yellow-400">{{ hospitalLinkText }}</a>
         <mat-icon class="disabled-icon">arrow_right</mat-icon>
       </div>
       <div class="text-[4rem] leading-none card-header">
-        <p>Lorem Lorem Ipsum<br/>
-          Medical Center</p>
+        <p>{{ mainTitleLine1 }}<br/>
+          {{ mainTitleLine2 }}</p>
       </div>
-      <p class="text-[2rem] pt-[4rem]">Respected around the world for research and</p>
-      <p class="text-[2rem] pt-[1rem]">patient care.</p>
+      <p class="text-[2rem] pt-[4rem]">{{ mainParagraphLine1 }}</p>
+      <p class="text-[2rem] pt-[1rem]">{{ mainParagraphLine2 }}</p>
     </div>
   </div>
 </div>

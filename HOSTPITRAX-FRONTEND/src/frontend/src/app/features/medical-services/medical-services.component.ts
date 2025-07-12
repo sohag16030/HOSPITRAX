@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import {SearchMedicalServicesComponent} from "./search-medical-services/search-medical-services.component";
 import {PrimaryCareCardComponent} from "./primary-care-card/primary-care-card.component";
 import {NgStyle} from "@angular/common";
-import {ServiceCardComponent} from "./service-card/service-card.component";
-import {ServiceListCardComponent} from "./service-list-card/service-list-card.component";
+import {EmergencyServiceCardComponent} from "./emergency-service-card/emergency-service-card.component";
+import {EmergencyServiceListCardComponent} from "./emergency-service-list-card/emergency-service-list-card.component";
 import {
   AlphabeticallyServicesCardComponent
 } from "./alphabetically-services-card/alphabetically-services-card.component";
@@ -16,8 +16,8 @@ import {AlphabeticalServicesListComponent} from "./alphabetical-services-list/al
     SearchMedicalServicesComponent,
     PrimaryCareCardComponent,
     NgStyle,
-    ServiceCardComponent,
-    ServiceListCardComponent,
+    EmergencyServiceCardComponent,
+    EmergencyServiceListCardComponent,
     AlphabeticallyServicesCardComponent,
     AlphabeticalServicesListComponent
   ],

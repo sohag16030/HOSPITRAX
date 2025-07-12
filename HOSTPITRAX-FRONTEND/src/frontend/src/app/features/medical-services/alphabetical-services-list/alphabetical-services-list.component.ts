@@ -4,10 +4,10 @@ import {
 } from "../alphabetically-services-card/alphabetically-services-card.component";
 import {NgClass, NgForOf} from "@angular/common";
 import {ALL_MEDICAL_SERVICES, LETTERS} from "../../../core/constants/constants";
-import {MedicalService} from "../../../core/models/MedicalService";
+import {NavLink} from "../../../core/models/models";
 
 @Component({
-  selector: 'app-alphabetical-services-list',
+  selector: 'alphabetical-services-list',
   standalone: true,
   imports: [
     AlphabeticallyServicesCardComponent,
@@ -18,10 +18,10 @@ import {MedicalService} from "../../../core/models/MedicalService";
   styleUrl: './alphabetical-services-list.component.css'
 })
 export class AlphabeticalServicesListComponent {
-  readonly allServices: MedicalService[] = ALL_MEDICAL_SERVICES;
+  readonly allServices: NavLink[] = ALL_MEDICAL_SERVICES;
   readonly letters: string[] = LETTERS;
 
-  getServicesByLetter(letter: string): MedicalService[] {
-    return this.allServices.filter((service: MedicalService) => service.name.startsWith(letter));
+  getServicesByLetter(letter: string): NavLink[] {
+    return this.allServices.filter((service: NavLink) => service.name.startsWith(letter));
   }
 }

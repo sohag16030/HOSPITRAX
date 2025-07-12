@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 import {BreadcrumbNavigationComponent} from "../breadcrumb-navigation/breadcrumb-navigation.component";
 
@@ -13,5 +13,12 @@ import {BreadcrumbNavigationComponent} from "../breadcrumb-navigation/breadcrumb
   styleUrl: './hero-banner.component.css'
 })
 export class HeroBannerComponent {
-
+  @Input() imgSrc!: string;
+  @Input() homeIconText!: string;
+  @Input() hospitalLinkText!: string;
+  @Input() mainTitleLine1!: string;
+  @Input() mainTitleLine2!: string;
+  @Input() mainParagraphLine1!: string;
+  @Input() mainParagraphLine2!: string;
+  @Input() hospitalLinkUrl!: string;
 }

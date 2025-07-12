@@ -1,8 +1,17 @@
 <div class="relative bg-pink-50 min-h-[60rem]">
-  <hero-banner/>
+  <hero-banner
+    [imgSrc]="'assets/images/hero-banner.jpg'"
+    [homeIconText]="'home'"
+    [hospitalLinkText]="'Hospitals'"
+    [hospitalLinkUrl]="'/locations'"
+    [mainTitleLine1]="'Welcome to'"
+    [mainTitleLine2]="'Our Health Center'"
+    [mainParagraphLine1]="'Providing compassionate care and cutting-edge research'"
+    [mainParagraphLine2]="'for a healthier community.'"
+  ></hero-banner>
   <div class="absolute left-1/2 transform -translate-x-1/2 z-20"
        style="top: calc(60vh);">
-    <breadcrumb-navigation></breadcrumb-navigation>
+    <breadcrumb-navigation [navLinks]="LOREM_NAV_LINK"></breadcrumb-navigation>
   </div>
   <div style="margin-top: 4rem; margin-bottom: 4rem">
     <map-and-directions></map-and-directions>

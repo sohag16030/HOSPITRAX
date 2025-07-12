@@ -5,7 +5,7 @@
       <button *ngFor="let service of services"
               mat-stroked-button
               class="custom-btn"
-              [routerLink]="service.route">
+              (click)="navigateTo(service.url)">
         {{ service.name }}
       </button>
     </div>

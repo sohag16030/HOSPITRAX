@@ -1,0 +1,16 @@
+<div class="relative bg-pink-50 min-h-[60rem]">
+  <hero-banner
+    [imgSrc]="'assets/images/medicalservices/audiology-r1.jpg'"
+    [homeIconText]="'home'"
+    [hospitalLinkText]="'Medical Services'"
+    [hospitalLinkUrl]="'/locations'"
+    [mainTitleLine1]="'Adolescent Epilepsy'"
+    [mainTitleLine2]="'Care'"
+    [mainParagraphLine1]="'Specialists in the Adolescent Epilepsy Center assess all the physical'"
+    [mainParagraphLine2]="'behavioral and social factors that affect teens’ wellness.'"
+  ></hero-banner>
+  <div class="absolute left-1/2 transform -translate-x-1/2 z-20"
+       style="top: calc(60vh);">
+    <breadcrumb-navigation [navLinks]="ADOLESCENT_EPILEPSY_CARE_NAV_LINK"></breadcrumb-navigation>
+  </div>
+</div>

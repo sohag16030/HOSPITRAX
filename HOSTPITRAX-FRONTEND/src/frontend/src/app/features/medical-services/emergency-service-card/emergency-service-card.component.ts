@@ -3,16 +3,16 @@ import {MatCard, MatCardContent} from "@angular/material/card";
 import {NgStyle} from "@angular/common";
 
 @Component({
-  selector: 'service-card',
+  selector: 'emergency-service-card',
   standalone: true,
   imports: [
     MatCard,
     MatCardContent,
     NgStyle
   ],
-  templateUrl: './service-card.component.html',
-  styleUrl: './service-card.component.css'
+  templateUrl: './emergency-service-card.component.html',
+  styleUrl: './emergency-service-card.component.css'
 })
-export class ServiceCardComponent {
+export class EmergencyServiceCardComponent {
 
 }
